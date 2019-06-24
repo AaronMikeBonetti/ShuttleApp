@@ -1,0 +1,45 @@
+
+    
+       .navbar__container{
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        border-top-right-radius: 0%;
+        
+        
+        .navbar__img{
+            background-image: url("../../imgs/Renaissance1.jpg");
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            width: 60px;
+            
+        } 
+        .navbar__arrivals__header,.navbar__departures__header{
+            height: 100%;
+            flex-grow: 1;
+            font-size: 20px;
+            text-align: right;
+            padding-top:20px;
+            background: rgb(119, 119, 119);
+        }
+        .navbar__departures__header{
+            background: white;
+            text-align: center;
+        }
+        .navbar__arrivals__corner{
+            height: 100%;
+            width: 60px;
+            background: rgb(119, 119, 119);
+            border-top-right-radius: 100%;
+        }
+        .navbar__departures__corner{
+            height: 100%;
+            width: 60px;
+            background: rgb(119, 119, 119);
+            border-top-left-radius: 100%;
+        }
+        
+    }

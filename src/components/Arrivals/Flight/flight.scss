@@ -1,0 +1,32 @@
+.flight__container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    li{
+        background: rgba(255, 255, 255, 0.335);
+        padding: 10px;
+        margin: 5px 0px;
+    }
+    .flight__img{
+        width: 30px;
+        height: 30px;
+        padding: 20px;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .FFT{
+        background-image: url('../../../imgs/Frontier.png');   
+    }
+    .UAL{
+        background-image: url('../../../imgs/United.png');   
+    }
+    .AAL{
+        background-image: url('../../../imgs/American.png');   
+    }
+    .ASA{
+        background-image: url('../../../imgs/Alaska.png');   
+    }
+}

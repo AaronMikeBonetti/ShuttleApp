@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAA;EAChB,UAAU,EAAE,OAAkB;EAC9B,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "arrivals.scss"
+    ],
+    "names": [],
+    "file": "arrivals.css"
+}

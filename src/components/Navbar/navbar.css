@@ -1,0 +1,54 @@
+.navbar__container {
+  width: 100vw;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-top-right-radius: 0%;
+}
+
+.navbar__container .navbar__img {
+  background-image: url("../../imgs/Renaissance1.jpg");
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 60px;
+}
+
+.navbar__container .navbar__arrivals__header, .navbar__container .navbar__departures__header {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 20px;
+  text-align: right;
+  padding-top: 20px;
+  background: #777777;
+}
+
+.navbar__container .navbar__departures__header {
+  background: white;
+  text-align: center;
+}
+
+.navbar__container .navbar__arrivals__corner {
+  height: 100%;
+  width: 60px;
+  background: #777777;
+  border-top-right-radius: 100%;
+}
+
+.navbar__container .navbar__departures__corner {
+  height: 100%;
+  width: 60px;
+  background: #777777;
+  border-top-left-radius: 100%;
+}
+/*# sourceMappingURL=navbar.css.map */

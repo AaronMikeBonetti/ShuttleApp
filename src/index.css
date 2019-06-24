@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+/*# sourceMappingURL=index.css.map */

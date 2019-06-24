@@ -1,6 +1,9 @@
 
 import React from 'react';
+import Navbar from "./components/Navbar/Navbar"
+import Arrivals from "./components/Arrivals/Arrivals"
 import { createStore, applyMiddleware } from "redux"
+
 
 const initialState = {}
 
@@ -14,12 +17,17 @@ const store = createStore(rootReducer, initialState, applyMiddleware(...middlewa
 console.log("store", store);
 
 
+
+
+
+
 function App(){
   
     return (
       
       <div className="app__container">
-
+        <Navbar/>
+        <Arrivals/>
         
       </div>
       
@@ -29,7 +37,7 @@ function App(){
 export default App;
 
 //App.js
-  // fetch flight info
+    // fetch flight info
     // search bar for flights
     // display in order of eta
     // create list from data

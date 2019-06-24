@@ -1,0 +1,44 @@
+.flight__container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.flight__container li {
+  background: rgba(255, 255, 255, 0.335);
+  padding: 10px;
+  margin: 5px 0px;
+}
+
+.flight__container .flight__img {
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flight__container .FFT {
+  background-image: url("../../../imgs/Frontier.png");
+}
+
+.flight__container .UAL {
+  background-image: url("../../../imgs/United.png");
+}
+
+.flight__container .AAL {
+  background-image: url("../../../imgs/American.png");
+}
+
+.flight__container .ASA {
+  background-image: url("../../../imgs/Alaska.png");
+}
+/*# sourceMappingURL=flight.css.map */

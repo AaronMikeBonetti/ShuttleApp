@@ -1,9 +1,13 @@
 import React from 'react'
+import "./flight.css"
 
-export default function Flights() {
+export default function Flight(props) {
     return (
-        <div className="flights__container">
-            
-        </div>
+        <ul className="flight__container">
+          <li className={`flight__img ${props.img}`}></li>  
+          <li className="flight__number">{props.num}</li>  
+          <li className="flight__eta">{props.eta}</li>  
+          <li className="flight__received">{props.received}</li>  
+        </ul>
     )
 }
