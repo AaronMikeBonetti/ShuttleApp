@@ -26,19 +26,19 @@
   background-position: center;
 }
 
-.flight__container .FFT {
+.flight__container .F9 {
   background-image: url("../../../imgs/Frontier.png");
 }
 
-.flight__container .UAL {
+.flight__container .UA {
   background-image: url("../../../imgs/United.png");
 }
 
-.flight__container .AAL {
+.flight__container .AA {
   background-image: url("../../../imgs/American.png");
 }
 
-.flight__container .ASA {
+.flight__container .AS {
   background-image: url("../../../imgs/Alaska.png");
 }
 /*# sourceMappingURL=flight.css.map */
