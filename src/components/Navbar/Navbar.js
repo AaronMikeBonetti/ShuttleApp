@@ -13,12 +13,12 @@ export default class Navbar extends Component{
     return (
         <div className="navbar__container">
             <div className="navbar__img"></div>
-            {/* <div className="arrivals__background"></div>
-            <div className="departures__background"></div> */}
+           
             
             <div className="navbar__arrivals__background"></div>
             <div className="navbar__departures__background"></div>
             <div className="navbar__picked-up__background"></div>
+            
     
                 <div className="navbar__arrivals__container">
                     <Link to="/arrivals">

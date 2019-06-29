@@ -205,6 +205,7 @@ this.configArrivalTime()
         
         return (
             <div className="arrivals__container">
+                <div className="arrivals__sidebar"></div>
                 {/* <form>
                     <input className=""></input>
                 </form> */}

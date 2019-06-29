@@ -1,11 +1,14 @@
 
        .navbar__container{
         width: 100vw;
-        height: 40px;
+        height: 60px;
         display: grid;
         grid-template-columns: 60px 1fr  1fr 1fr 1fr;
-        grid-template-rows: 40px;
+        grid-template-rows: 10px 50px;
         border-top-right-radius: 0%;
+        font-weight: 800;
+        font-size: 3.5vw;
+        background: rgb(0, 0, 0);
 
         .navbar__img{
             grid-column: 1;
@@ -18,8 +21,8 @@
 
         .navbar__arrivals__background,
         .navbar__departures__background,
-        .navbar__pick-up__background{
-            grid-row:1;
+        .navbar__picked-up__background{
+            grid-row:2;
             width: 100%;
             height: 100%;
         }
@@ -32,21 +35,21 @@
             background: rgb(189, 189, 189);
         }
         .navbar__picked-up__background{
-            grid-column: 5;
-            background: rgb(255, 0, 0);
+            grid-column: 4;
+            background: rgb(255, 255, 255);
         }
         
 
         .navbar__arrivals__container{
             width: 100%;
             grid-column: 2;
-            grid-row: 1;
+            grid-row: 2;
             display: flex;
             text-align: center;
             a{
                 color: rgb(0, 0, 0);
                 text-decoration: none;
-                font-size: 3vw;
+                
                 height: 100%;
                 width: 80%;
                 padding-top:10px;
@@ -54,8 +57,8 @@
             }
             
             .navbar__arrivals__corner{
-                height: 40px;
-                width: 40px;
+                height: 50px;
+                width: 50px;
                 border-top-right-radius: 100%;
                 background: rgb(107, 107, 107);
                 
@@ -65,13 +68,13 @@
         .navbar__departures__container{
             width: 100%;
             grid-column: 3;
-            grid-row: 1;
+            grid-row: 2;
             display: flex;
             text-align: center;
             a{
                 color: rgb(0, 0, 0);
                 text-decoration: none;
-                font-size: 3vw;
+                
                 height: 100%;
                 width: 80%;
                 padding-top:10px;
@@ -79,8 +82,8 @@
             }
             
             .navbar__departure__corner{
-                height: 40px;
-                width: 40px;
+                height: 50px;
+                width: 50px;
                 border-top-right-radius: 100%;
                 background: rgb(141, 141, 141);
                 
@@ -89,13 +92,12 @@
         .navbar__picked-up__container{
             width: 100%;
             grid-column: 4;
-            grid-row: 1;
+            grid-row: 2;
             display: flex;
             text-align: center;
             a{
                 color: rgb(0, 0, 0);
                 text-decoration: none;
-                font-size: 3vw;
                 height: 100%;
                 width: 80%;
                 padding-top:10px;
@@ -103,8 +105,8 @@
             }
             
             .navbar__picked-up__corner{
-                height: 40px;
-                width: 40px;
+                height: 50px;
+                width: 50px;
                 border-top-right-radius: 100%;
                 background: rgb(189, 189, 189);
                 
@@ -113,13 +115,13 @@
         .navbar__valet__container{
             width: 100%;
             grid-column: 5;
-            grid-row: 1;
+            grid-row: 2;
             display: flex;
             text-align: center;
+            background: white;
             a{
                 color: rgb(0, 0, 0);
                 text-decoration: none;
-                font-size: 3vw;
                 height: 100%;
                 width: 80%;
                 padding-top:10px;
