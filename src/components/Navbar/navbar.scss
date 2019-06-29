@@ -1,5 +1,4 @@
 
-    
        .navbar__container{
         width: 100vw;
         height: 60px;
@@ -7,6 +6,32 @@
         justify-content: left;
         flex-direction: row;
         border-top-right-radius: 0%;
+        a{
+            text-decoration: none;
+            height: 100%;
+            flex-grow: 1;
+            outline: none;
+        }
+        
+        .arrivals__background{
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            left: 20%;
+            height: 60px;
+            width: 20%;
+            background: rgb(150, 150, 150);
+        }
+        .departures__background{
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            left: 40%;
+            height: 60px;
+            width: 20%;
+            background: rgb(216, 216, 216);
+        }
+        
         
         
         .navbar__img{
@@ -17,29 +42,49 @@
             width: 60px;
             
         } 
-        .navbar__arrivals__header,.navbar__departures__header{
+        
+        .navbar__arrivals__header,.navbar__departures__header,
+        .navbar__picked-up__header,
+        .navbar__valet__header{
+            
             height: 100%;
             flex-grow: 1;
-            font-size: 20px;
+            font-size: 3vw;
             text-align: right;
             padding-top:20px;
-            background: rgb(119, 119, 119);
+            background: rgb(107, 107, 107);
+            color: black;
+            
         }
+        
+        
         .navbar__departures__header{
-            background: white;
+            background: rgb(150, 150, 150);
             text-align: center;
         }
-        .navbar__arrivals__corner{
+        .navbar__picked-up__header{
+            text-align: center;
+            background: rgb(216, 216, 216);
+        }
+        .navbar__valet__header{
+            text-align: left;
+            background: rgb(255, 255, 255);
+            padding-right: 40px;
+            
+        }
+        .navbar__arrivals__corner,
+        .navbar__departures__corner,
+        .navbar__picked-up__corner{
             height: 100%;
             width: 60px;
-            background: rgb(119, 119, 119);
+            background: rgb(107, 107, 107);
             border-top-right-radius: 100%;
         }
         .navbar__departures__corner{
-            height: 100%;
-            width: 60px;
-            background: rgb(119, 119, 119);
-            border-top-left-radius: 100%;
+            background: rgb(150, 150, 150);
+        }
+        .navbar__picked-up__corner{
+            background: rgb(216, 216, 216);
         }
         
     }

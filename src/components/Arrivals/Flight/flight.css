@@ -4,17 +4,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   list-style: none;
+  text-align: center;
 }
 
 .flight__container li {
+  width: 100%;
   background: rgba(255, 255, 255, 0.335);
   padding: 10px;
   margin: 5px 0px;
+  font-weight: 600;
+}
+
+.flight__container li:nth-child(2) {
+  padding-left: 30px;
 }
 
 .flight__container .flight__img {
@@ -24,6 +27,13 @@
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.flight__container .flight__picked-up {
+  background: #cfcfcf;
+  text-align: center;
+  font-size: 17px;
+  cursor: pointer;
 }
 
 .flight__container .F9 {

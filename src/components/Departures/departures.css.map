@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAA;EAClB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,GAAG;CAClB",
+    "sources": [
+        "departures.scss"
+    ],
+    "names": [],
+    "file": "departures.css"
+}

@@ -1,5 +1,32 @@
 .arrivals__container {
-  background: #777777;
-  height: 700px;
+  background: #6b6b6b;
+  height: 100%;
+}
+
+.arrivals__container .arrivals__header {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.329);
+}
+
+.arrivals__container .arrivals__header li {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0px;
+}
+
+.arrivals__container .arrivals__header li:nth-child(1) {
+  width: 60px;
 }
 /*# sourceMappingURL=arrivals.css.map */

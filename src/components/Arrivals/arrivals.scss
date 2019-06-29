@@ -1,4 +1,27 @@
 .arrivals__container{
-    background: rgb(119, 119, 119);
-    height: 700px;
+    background: rgb(107, 107, 107);
+    height: 100%;
+    
+    .arrivals__header{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px ;
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: flex-end;
+    
+    border-bottom: 2px solid rgba(0, 0, 0, 0.329);
+    li{
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0px;
+    }
+    li:nth-child(1){
+        width: 60px;
+    }
+    
+    }
 }
