@@ -1,6 +1,40 @@
 .departures__container {
-  height: 600px;
-  width: 100vw;
-  background: red;
+  background: #8d8d8d;
+  height: 100%;
+}
+
+.departures__container .departures__sidebar {
+  position: absolute;
+  top: 60px;
+  height: 100%;
+  width: 10px;
+  background: black;
+}
+
+.departures__container .departures__header {
+  width: 50%;
+  margin: auto;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.329);
+}
+
+.departures__container .departures__header li {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0px;
+}
+
+.departures__container .departures__header li:nth-child(1) {
+  width: 60px;
 }
 /*# sourceMappingURL=departures.css.map */
