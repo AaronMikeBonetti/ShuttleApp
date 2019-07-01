@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -31,7 +29,6 @@
   ],
   "devDependencies": {
     "css-loader": "^2.1.0",
-    "nodemon": "^1.19.1",
     "style-loader": "^0.23.1"
   }
 }
