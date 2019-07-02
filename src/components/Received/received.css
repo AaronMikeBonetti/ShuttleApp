@@ -1,9 +1,9 @@
-.departures__container {
+.received__container {
   background: #8d8d8d;
   height: 100%;
 }
 
-.departures__container .departures__sidebar {
+.received__container .received__sidebar {
   position: absolute;
   top: 60px;
   height: 100%;
@@ -11,7 +11,7 @@
   background: black;
 }
 
-.departures__container .departures__header {
+.received__container .received__header {
   width: 90%;
   margin: auto;
   padding-top: 20px;
@@ -28,13 +28,13 @@
   border-bottom: 2px solid rgba(0, 0, 0, 0.329);
 }
 
-.departures__container .departures__header li {
+.received__container .received__header li {
   width: 100%;
   padding: 10px;
   margin: 5px 0px;
 }
 
-.departures__container .departures__header li:nth-child(1) {
+.received__container .received__header li:nth-child(1) {
   width: 60px;
 }
-/*# sourceMappingURL=departures.css.map */
+/*# sourceMappingURL=received.css.map */

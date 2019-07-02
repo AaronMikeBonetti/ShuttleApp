@@ -19,9 +19,9 @@ connection.once('open', ()=>{
     console.log("MongoDB database connection established....")
 })
 
-const pickedUpRouter = require('./Routes/picked-up')
+const receivedRouter = require('./Routes/received')
 
-app.use('/pickedup', pickedUpRouter)
+app.use('/received', receivedRouter)
 
 app.listen(PORT, () =>{
     console.log("server is live on:", PORT)})

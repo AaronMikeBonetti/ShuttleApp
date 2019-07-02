@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Arrivals from "./components/Arrivals/Arrivals"
 import { createStore, applyMiddleware } from "redux"
 import Departures from './components/Departures/Departures';
+import Received from './components/Received/Received';
 
 
 const initialState = {}
@@ -31,6 +32,7 @@ function App(){
         <Navbar/>
         <Route onEnter={window.scroll(0,0)} path="/arrivals" component={Arrivals}/>
         <Route path="/departures" component={Departures}/>
+        <Route path="/received" component={Received}/>
         
         
       </div>

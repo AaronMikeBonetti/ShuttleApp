@@ -5,6 +5,7 @@
 import React, { Component } from 'react'
 import "./arrivals.css"
 import Flight from "./Flight/Flight"
+import Axios from 'axios';
 
 
 
@@ -153,9 +154,21 @@ export default class Arrivals extends Component {
         })
     }
     this.confirmPickUp = (e) =>{
+        let crew = {
+            airline:e.carrierFsCode,
+            flightNumber:e.flightNumber,
+            arrivalDate:e.arrivalDate.dateLocal
+        }
+        console.log(crew)
+        Axios.post('http://localhost:5000/received/add', crew)
+            .then(res=>console.log(res.data))
+
+        this.setState(prevState=>({
+            flightsData: prevState.flightsData.filter(flight=>{
+               return flight.flightNumber !== e.flightNumber &&  flight.carrierFsCode !== e.carrierFsCode
+        })
+        }))
         
-            
-            console.log(e.carrierFsCode)
     } 
    
 

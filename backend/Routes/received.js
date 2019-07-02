@@ -1,8 +1,8 @@
 const router = require('express').Router()
-let PickedUp = require('../Models/picked-up.model')
+let Received = require('../Models/received.model')
 
 router.route('/').get((req,res)=>{
-    PickedUp.find()
+    Received.find()
         .then(crews => res.json(crews))
         .catch(err=> res.status(400).json('Error:' + err))
 })
@@ -10,14 +10,13 @@ router.route('/').get((req,res)=>{
 router.route('/add').post((req,res)=>{
     const airline = req.body.airline
     const flightNumber = req.body.flightNumber
-    const arrivalTime = Number(req.body.arrivalTime)
-    const date = Date.parse(req.body.date)
-
-    const newCrew = new PickedUp({
+    const arrivalDate = req.body.arrivalDate
+    
+    const newCrew = new Received({
         airline,
         flightNumber,
-        arrivalTime,
-        date
+        arrivalDate,
+        
     })
 
     newCrew.save()

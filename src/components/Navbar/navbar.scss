@@ -21,7 +21,7 @@
 
         .navbar__arrivals__background,
         .navbar__departures__background,
-        .navbar__picked-up__background{
+        .navbar__received__background{
             grid-row:2;
             width: 100%;
             height: 100%;
@@ -34,7 +34,7 @@
             grid-column: 3;
             background: rgb(189, 189, 189);
         }
-        .navbar__picked-up__background{
+        .navbar__received__background{
             grid-column: 4;
             background: rgb(255, 255, 255);
         }
@@ -89,7 +89,7 @@
                 
             }
         }
-        .navbar__picked-up__container{
+        .navbar__received__container{
             width: 100%;
             grid-column: 4;
             grid-row: 2;
@@ -105,7 +105,7 @@
                 background: rgb(189, 189, 189);
             }
             
-            .navbar__picked-up__corner{
+            .navbar__received__corner{
                 height: 50px;
                 width: 50px;
                 border-top-right-radius: 100%;

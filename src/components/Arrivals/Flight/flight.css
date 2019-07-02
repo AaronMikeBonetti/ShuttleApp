@@ -29,7 +29,7 @@
   background-position: center;
 }
 
-.flight__container .flight__picked-up {
+.flight__container .flight__received {
   background: #cfcfcf;
   text-align: center;
   font-size: 17px;

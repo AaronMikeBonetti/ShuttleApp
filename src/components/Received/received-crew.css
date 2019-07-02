@@ -1,4 +1,4 @@
-.crew__container {
+.received-crew__container {
   width: 90%;
   margin: auto;
   display: -webkit-box;
@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.crew__container li {
+.received-crew__container li {
   width: 100%;
   background: rgba(255, 255, 255, 0.335);
   padding: 10px;
@@ -16,11 +16,11 @@
   font-weight: 600;
 }
 
-.crew__container li:nth-child(2) {
+.received-crew__container li:nth-child(2) {
   padding-left: 30px;
 }
 
-.crew__container .crew__img {
+.received-crew__container .received-crew__img {
   width: 30px;
   height: 30px;
   padding: 20px;
@@ -29,31 +29,19 @@
   background-position: center;
 }
 
-.crew__container .quarter__hour__class {
-  background: red;
+.received-crew__container .F9 {
+  background-image: url("../../imgs/Frontier.png");
 }
 
-.crew__container .F9 {
-  background-image: url("../../imgs/Alaska.png");
-}
-
-.crew__container .UA {
+.received-crew__container .UA {
   background-image: url("../../imgs/United.png");
 }
 
-.crew__container .AA {
+.received-crew__container .AA {
   background-image: url("../../imgs/American.png");
 }
 
-.crew__container .AS {
+.received-crew__container .AS {
   background-image: url("../../imgs/Alaska.png");
 }
-
-.quarter__hour__class {
-  color: black;
-}
-
-.quarter__hour__class li {
-  background: #dfdfdf;
-}
-/*# sourceMappingURL=crew.css.map */
+/*# sourceMappingURL=received-crew.css.map */
