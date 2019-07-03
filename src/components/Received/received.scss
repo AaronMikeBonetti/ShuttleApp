@@ -2,15 +2,7 @@
     background: rgb(189, 189, 189);
     min-height: 100vh;
     max-height: auto;
-
-    .received__sidebar{
-        position: absolute;
-        top: 60px;
-        min-height: 100vh;
-        max-height: auto;
-        width: 10px;
-        background: black;
-    }
+    
     .received__header{
     width: 90%;
     margin: auto;
@@ -28,6 +20,7 @@
         margin: 5px 0px;
     }
     li:nth-child(1){
+        margin-bottom:12px;
         width: 60px;
     }
     

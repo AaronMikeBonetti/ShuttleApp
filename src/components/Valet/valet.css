@@ -1,0 +1,41 @@
+.valet__container .valet__form {
+  width: 80%;
+  height: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #868686;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.valet__container .valet__form input {
+  margin: 20px auto;
+  width: 80%;
+  height: 40px;
+  font-size: 30px;
+  padding-left: 10px;
+  color: black;
+  outline-color: black;
+}
+
+.valet__container .valet__form button {
+  height: 50px;
+  width: 80%;
+  margin: 20px auto;
+  font-size: 30px;
+  background: #b1b1b1;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.valet__container .valet__form button:hover,
+.valet__container .valet__form button:active {
+  color: white;
+  background: #555555;
+}
+/*# sourceMappingURL=valet.css.map */

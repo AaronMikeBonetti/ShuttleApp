@@ -44,12 +44,12 @@ export default class Received extends Component {
         
         return (
             <div className="received__container">
-                <div className="received__sidebar"></div>
+               
                 <ul className="received__header">
-                    <li>Airline</li>
-                    <li>Flight Number</li>
-                    <li>Arrival Time</li>
-                    <li>Received Time</li>
+                    <li>Airline<br/></li>
+                    <li>Flight<br/>Number</li>
+                    <li>Arrival<br/>Time</li>
+                    <li>Received<br/>Time</li>
                 </ul>  
                 {crews}
             </div>

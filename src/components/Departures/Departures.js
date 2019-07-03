@@ -133,7 +133,7 @@ export default class Departures extends Component {
         })
         return (
             <div className="departures__container">
-                <div className="departures__sidebar"></div>
+                
                 <ul className="departures__header">
                     <li>Airline</li>
                     <li>Time</li>

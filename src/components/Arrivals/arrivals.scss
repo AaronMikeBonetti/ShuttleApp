@@ -3,13 +3,7 @@
     min-height: 100vh;
     max-height: auto;
 
-    .arrivals__sidebar{
-        position: absolute;
-        top: 60px;
-        height: 100%;
-        width: 10px;
-        background: black;
-    }
+    
     
     .arrivals__header{
     width: 90%;
@@ -29,7 +23,13 @@
         margin: 5px 0px;
     }
     li:nth-child(1){
+        margin-bottom: 12px;
         width: 60px;
+    }
+    li:nth-child(3){
+        margin-bottom: 12px;
+        margin-right: 10px;
+        
     }
     
     }

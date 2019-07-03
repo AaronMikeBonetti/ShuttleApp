@@ -5,4 +5,12 @@
           box-sizing: border-box;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
+
+* input,
+* textarea,
+* button,
+* select,
+* a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 /*# sourceMappingURL=index.css.map */

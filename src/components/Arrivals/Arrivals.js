@@ -252,7 +252,7 @@ this.configArrivalTime()
         
         return (
             <div className="arrivals__container">
-                <div className="arrivals__sidebar"></div>
+                
                 {/* <form>
                     <select name='airlineSelectOption' value={this.state.airlineSelectOption} onChange={this.handleChange}>
                         <option value="" >Select Airline</option>

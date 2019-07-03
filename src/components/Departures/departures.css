@@ -3,14 +3,6 @@
   height: 100%;
 }
 
-.departures__container .departures__sidebar {
-  position: absolute;
-  top: 60px;
-  height: 100%;
-  width: 10px;
-  background: black;
-}
-
 .departures__container .departures__header {
   width: 90%;
   margin: auto;

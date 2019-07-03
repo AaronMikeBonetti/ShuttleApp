@@ -4,15 +4,6 @@
   max-height: auto;
 }
 
-.received__container .received__sidebar {
-  position: absolute;
-  top: 60px;
-  min-height: 100vh;
-  max-height: auto;
-  width: 10px;
-  background: black;
-}
-
 .received__container .received__header {
   width: 90%;
   margin: auto;
@@ -37,6 +28,7 @@
 }
 
 .received__container .received__header li:nth-child(1) {
+  margin-bottom: 12px;
   width: 60px;
 }
 /*# sourceMappingURL=received.css.map */

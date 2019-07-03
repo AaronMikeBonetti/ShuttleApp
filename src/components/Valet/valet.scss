@@ -1,0 +1,37 @@
+.valet__container{
+    .valet__form{
+        width: 80%;
+        height: 400px;
+        margin: 50px auto;
+        padding: 40px;
+        background: rgb(134, 134, 134);
+        display: flex;
+        flex-direction: column;
+        input{
+            margin: 20px auto;
+            width: 80%;
+            height: 40px;
+            font-size: 30px;
+            padding-left: 10px;
+            color: rgb(0, 0, 0);
+            outline-color: black;
+        }
+        button{
+            height: 50px;
+            width: 80%;
+            margin: 20px auto;
+            font-size: 30px;
+            background: rgb(177, 177, 177);
+            border: 2px solid black;
+            cursor: pointer;
+            
+            
+
+        }
+        button:hover,
+        button:active{
+            color: white;
+            background: rgb(85, 85, 85);
+        }
+    }
+}
