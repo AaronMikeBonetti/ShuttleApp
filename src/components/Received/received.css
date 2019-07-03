@@ -1,12 +1,14 @@
 .received__container {
-  background: #8d8d8d;
-  height: 100%;
+  background: #bdbdbd;
+  min-height: 100vh;
+  max-height: auto;
 }
 
 .received__container .received__sidebar {
   position: absolute;
   top: 60px;
-  height: 100%;
+  min-height: 100vh;
+  max-height: auto;
   width: 10px;
   background: black;
 }

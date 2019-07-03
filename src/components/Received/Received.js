@@ -15,7 +15,7 @@ export default class Received extends Component {
         axios.get('http://localhost:5000/received/')
             .then(response=>{
                 if(response.data.length > 0){
-                    console.log(response.data)
+                    
                     this.setState({
                         receivedList: response.data
                     })

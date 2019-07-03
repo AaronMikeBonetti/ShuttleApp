@@ -1,6 +1,7 @@
 .arrivals__container {
   background: #6b6b6b;
-  height: 100%;
+  min-height: 100vh;
+  max-height: auto;
 }
 
 .arrivals__container .arrivals__sidebar {

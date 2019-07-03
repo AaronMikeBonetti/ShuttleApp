@@ -1,11 +1,13 @@
 .received__container{
-    background: rgb(141, 141, 141);
-    height: 100%;
+    background: rgb(189, 189, 189);
+    min-height: 100vh;
+    max-height: auto;
 
     .received__sidebar{
         position: absolute;
         top: 60px;
-        height: 100%;
+        min-height: 100vh;
+        max-height: auto;
         width: 10px;
         background: black;
     }
@@ -19,7 +21,6 @@
     list-style: none;
     text-align: center;
     align-items: flex-end;
-    
     border-bottom: 2px solid rgba(0, 0, 0, 0.329);
     li{
         width: 100%;

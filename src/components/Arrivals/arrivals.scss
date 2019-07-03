@@ -1,6 +1,7 @@
 .arrivals__container{
     background: rgb(107, 107, 107);
-    height: 100%;
+    min-height: 100vh;
+    max-height: auto;
 
     .arrivals__sidebar{
         position: absolute;

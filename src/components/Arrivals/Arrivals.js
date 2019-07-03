@@ -1,6 +1,3 @@
-//build function to filter data based on flight num && airline
-//add button for flights with fl# input and airline input 
-
 
 import React, { Component } from 'react'
 import "./arrivals.css"
@@ -159,7 +156,7 @@ export default class Arrivals extends Component {
             flightNumber:e.flightNumber,
             arrivalDate:e.arrivalDate.dateLocal
         }
-        console.log(crew)
+        
         Axios.post('http://localhost:5000/received/add', crew)
             .then(res=>console.log(res.data))
 

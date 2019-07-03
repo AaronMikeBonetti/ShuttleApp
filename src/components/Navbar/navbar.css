@@ -22,31 +22,52 @@
   background-position: center;
 }
 
-.navbar__container .navbar__arrivals__background,
-.navbar__container .navbar__departures__background,
-.navbar__container .navbar__received__background {
+.navbar__container .navbar__arrivals__background__light,
+.navbar__container .navbar__arrivals__background__dark,
+.navbar__container .navbar__departures__background__light,
+.navbar__container .navbar__departures__background__dark,
+.navbar__container .navbar__received__background__light,
+.navbar__container .navbar__received__background__dark {
   -ms-grid-row: 2;
   grid-row: 2;
   width: 100%;
   height: 100%;
 }
 
-.navbar__container .navbar__arrivals__background {
+.navbar__container .navbar__arrivals__background__light {
   -ms-grid-column: 2;
   grid-column: 2;
   background: #8d8d8d;
 }
 
-.navbar__container .navbar__departures__background {
+.navbar__container .navbar__arrivals__background__dark {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background: #6b6b6b;
+}
+
+.navbar__container .navbar__departures__background__light {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  background: #8d8d8d;
+}
+
+.navbar__container .navbar__departures__background__dark {
   -ms-grid-column: 3;
   grid-column: 3;
   background: #bdbdbd;
 }
 
-.navbar__container .navbar__received__background {
+.navbar__container .navbar__received__background__light {
   -ms-grid-column: 4;
   grid-column: 4;
   background: white;
+}
+
+.navbar__container .navbar__received__background__dark {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  background: #bdbdbd;
 }
 
 .navbar__container .navbar__arrivals__container {
@@ -71,11 +92,18 @@
   background: #6b6b6b;
 }
 
-.navbar__container .navbar__arrivals__container .navbar__arrivals__corner {
+.navbar__container .navbar__arrivals__container .navbar__arrivals__right__corner {
   height: 50px;
   width: 50px;
   border-top-right-radius: 100%;
   background: #6b6b6b;
+}
+
+.navbar__container .navbar__arrivals__container .navbar__arrivals__left__corner {
+  height: 50px;
+  width: 50px;
+  border-top-left-radius: 100%;
+  background: #8d8d8d;
 }
 
 .navbar__container .navbar__departures__container {
@@ -100,11 +128,18 @@
   background: #8d8d8d;
 }
 
-.navbar__container .navbar__departures__container .navbar__departure__corner {
+.navbar__container .navbar__departures__container .navbar__departures__right__corner {
   height: 50px;
   width: 50px;
   border-top-right-radius: 100%;
   background: #8d8d8d;
+}
+
+.navbar__container .navbar__departures__container .navbar__departures__left__corner {
+  height: 50px;
+  width: 50px;
+  border-top-left-radius: 100%;
+  background: #bdbdbd;
 }
 
 .navbar__container .navbar__received__container {
@@ -129,11 +164,18 @@
   background: #bdbdbd;
 }
 
-.navbar__container .navbar__received__container .navbar__received__corner {
+.navbar__container .navbar__received__container .navbar__received__right__corner {
   height: 50px;
   width: 50px;
   border-top-right-radius: 100%;
   background: #bdbdbd;
+}
+
+.navbar__container .navbar__received__container .navbar__received__left__corner {
+  height: 50px;
+  width: 50px;
+  border-top-left-radius: 100%;
+  background: white;
 }
 
 .navbar__container .navbar__valet__container {

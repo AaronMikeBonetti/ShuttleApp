@@ -19,24 +19,40 @@
    
         } 
 
-        .navbar__arrivals__background,
-        .navbar__departures__background,
-        .navbar__received__background{
+        .navbar__arrivals__background__light,
+        .navbar__arrivals__background__dark,
+        .navbar__departures__background__light,
+        .navbar__departures__background__dark,
+        .navbar__received__background__light,
+        .navbar__received__background__dark{
             grid-row:2;
             width: 100%;
             height: 100%;
         }
-        .navbar__arrivals__background{
+        .navbar__arrivals__background__light{
             grid-column: 2;
-            background: rgb(141, 141, 141); 
+            background: rgb(141, 141, 141);
+             
         }
-        .navbar__departures__background{
+        .navbar__arrivals__background__dark{
+            grid-column: 2;
+            background: rgb(107, 107, 107); 
+        }
+        .navbar__departures__background__light{
+            grid-column: 3;
+            background: rgb(141, 141, 141);
+        }
+        .navbar__departures__background__dark{
             grid-column: 3;
             background: rgb(189, 189, 189);
         }
-        .navbar__received__background{
+        .navbar__received__background__light{
             grid-column: 4;
             background: rgb(255, 255, 255);
+        }
+        .navbar__received__background__dark{
+            grid-column: 4;
+            background: rgb(189, 189, 189);
         }
         
 
@@ -56,11 +72,20 @@
                 background: rgb(107, 107, 107);
             }
             
-            .navbar__arrivals__corner{
+            .navbar__arrivals__right__corner{
+                
                 height: 50px;
                 width: 50px;
                 border-top-right-radius: 100%;
                 background: rgb(107, 107, 107);
+                
+            }
+            .navbar__arrivals__left__corner{
+                
+                height: 50px;
+                width: 50px;
+                border-top-left-radius: 100%;
+                background: rgb(141, 141, 141);
                 
             }
             
@@ -81,11 +106,18 @@
                 background: rgb(141, 141, 141);
             }
             
-            .navbar__departure__corner{
+            .navbar__departures__right__corner{
                 height: 50px;
                 width: 50px;
                 border-top-right-radius: 100%;
                 background: rgb(141, 141, 141);
+                
+            }
+            .navbar__departures__left__corner{
+                height: 50px;
+                width: 50px;
+                border-top-left-radius: 100%;
+                background: rgb(189, 189, 189);
                 
             }
         }
@@ -105,11 +137,18 @@
                 background: rgb(189, 189, 189);
             }
             
-            .navbar__received__corner{
+            .navbar__received__right__corner{
                 height: 50px;
                 width: 50px;
                 border-top-right-radius: 100%;
                 background: rgb(189, 189, 189);
+                
+            }
+            .navbar__received__left__corner{
+                height: 50px;
+                width: 50px;
+                border-top-left-radius: 100%;
+                background: rgb(255, 255, 255);
                 
             }
         }
