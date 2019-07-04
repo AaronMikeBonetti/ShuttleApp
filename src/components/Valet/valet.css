@@ -1,7 +1,15 @@
+.valet__container {
+  position: relative;
+  z-index: 0;
+  background: white;
+  padding-top: 40px;
+  height: 100vh;
+}
+
 .valet__container .valet__form {
   width: 80%;
   height: 400px;
-  margin: 50px auto;
+  margin: auto;
   padding: 40px;
   background: rgba(134, 134, 134, 0.815);
   display: -webkit-box;
@@ -48,8 +56,7 @@
   margin: auto;
   height: 100%;
   width: 100%;
-  background: url("../../imgs/Renaissance2.jpg"), -webkit-gradient(linear, left top, left bottom, from(white), to(#c7c7c7));
-  background: url("../../imgs/Renaissance2.jpg"), linear-gradient(white, #c7c7c7);
+  background: url("../../imgs/Renaissance2.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;

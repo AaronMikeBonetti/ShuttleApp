@@ -13,4 +13,9 @@
 * a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+body {
+  margin-left: 20px;
+  background: rgba(0, 0, 0, 0.856);
+}
 /*# sourceMappingURL=index.css.map */

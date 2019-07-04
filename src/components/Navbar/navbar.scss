@@ -8,11 +8,12 @@
         border-top-right-radius: 0%;
         font-weight: 800;
         font-size: 3.5vw;
-        background: rgb(0, 0, 0);
+        background: rgb(36, 36, 36);
 
         .navbar__img{
             grid-column: 1;
-            height: 60px;
+            grid-row: 2;
+            height: 50px;
             background-image: url("../../imgs/Renaissance1.jpg");
             background-size: contain;
             background-position: center;
