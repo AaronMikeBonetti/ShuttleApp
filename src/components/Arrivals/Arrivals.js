@@ -167,6 +167,17 @@ export default class Arrivals extends Component {
         }))
         
     } 
+    this.fetchFlights = () =>{
+
+            Axios.get('http://localhost:5000/arrivals/')
+            .then(response=>{
+                if(response.data.length > 0){
+                    this.setState({
+                        flightsData: response.data
+                    })
+                }
+            })
+    } 
    
 
 }

@@ -26,10 +26,31 @@
   width: 80%;
   height: 40px;
   font-size: 30px;
-  padding-left: 10px;
   color: black;
-  outline-color: black;
+  outline-color: rgba(255, 0, 0, 0);
   border: none;
+  border-bottom: 2px solid black;
+  background: rgba(158, 158, 158, 0);
+}
+
+.valet__container .valet__form input::-webkit-input-placeholder {
+  opacity: 0.6;
+  color: white;
+}
+
+.valet__container .valet__form input:-ms-input-placeholder {
+  opacity: 0.6;
+  color: white;
+}
+
+.valet__container .valet__form input::-ms-input-placeholder {
+  opacity: 0.6;
+  color: white;
+}
+
+.valet__container .valet__form input::placeholder {
+  opacity: 0.6;
+  color: white;
 }
 
 .valet__container .valet__form button {
