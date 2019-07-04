@@ -26,7 +26,7 @@ export default class Valet extends Component {
                     <input className="valet__ticket__input" onChange={this.handleChange}  name="ticketNumber" value={this.state.ticketNumber} placeholder="Ticket Number"></input>
                     <button onClick={this.handleSubmit}>Submit</button>
                 </form>
-                
+                <div className="valet__corner__logo"></div>
             </div>
         )
     }

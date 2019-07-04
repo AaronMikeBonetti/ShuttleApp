@@ -3,7 +3,7 @@
   height: 400px;
   margin: 50px auto;
   padding: 40px;
-  background: #868686;
+  background: rgba(134, 134, 134, 0.815);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,6 +21,7 @@
   padding-left: 10px;
   color: black;
   outline-color: black;
+  border: none;
 }
 
 .valet__container .valet__form button {
@@ -37,5 +38,20 @@
 .valet__container .valet__form button:active {
   color: white;
   background: #555555;
+}
+
+.valet__container .valet__corner__logo {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background: url("../../imgs/Renaissance2.jpg"), -webkit-gradient(linear, left top, left bottom, from(white), to(#c7c7c7));
+  background: url("../../imgs/Renaissance2.jpg"), linear-gradient(white, #c7c7c7);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 /*# sourceMappingURL=valet.css.map */

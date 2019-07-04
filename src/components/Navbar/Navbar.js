@@ -11,8 +11,7 @@ export default class Navbar extends Component{
             departuresBackground:"navbar__departures__background__dark",
             departuresCorner:"navbar__departures__right__corner",
             receivedBackground:"navbar__received__background__light",
-           receivedCorner:"navbar__received__right__corner"
-            
+            receivedCorner:"navbar__received__right__corner" 
         }
         
         this.changeTab = (tab) =>{
