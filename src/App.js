@@ -32,13 +32,10 @@ function App(){
       <BrowserRouter>
       <div className="app__container">
         <Navbar/>
-        <Route onEnter={window.scroll(0,0)} path="/" component={Arrivals}/>
+        <Route onEnter={window.scroll(0,0)} path="/arrivals" component={Arrivals}/>
         <Route path="/departures" component={Departures}/>
         <Route path="/received" component={Received}/>
-        <Route path="/valet" component={Valet}/>
-        
-        
-        
+        <Route path="/valet" component={Valet}/> 
       </div>
       </BrowserRouter>
       
