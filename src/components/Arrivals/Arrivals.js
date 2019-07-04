@@ -222,6 +222,7 @@ this.getAirlineFlightSchedules('KMCO',this.configCurrentTimeInput(),'F9')
 // this.getAirlineFlightSchedules('KMCO','2019/6/23/17','AS')
 
 this.configArrivalTime()
+this.sortFlightsByArrivalTime(this.state.flightsData)
  
     }
 
