@@ -36,4 +36,10 @@
   margin-bottom: 12px;
   margin-right: 10px;
 }
+
+@media screen and (min-width: 1000px) {
+  .arrivals__container .arrivals__header {
+    width: 60%;
+  }
+}
 /*# sourceMappingURL=arrivals.css.map */

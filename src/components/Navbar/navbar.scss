@@ -10,13 +10,13 @@
         font-size: 3.5vw;
         background: url("../../imgs/nabar-background.jpg");
         background-position: center;
-        background-size: contain;
+        background-size: cover;
 
         .navbar__img{
             grid-column: 1;
             grid-row: 1;
-            height: 50px;
-            margin-right: 40px;
+            height: 40px;
+            margin: 5px;
             background-image: url("../../imgs/Renaissance1.jpg");
             background-size: contain;
             background-position: left;
@@ -177,7 +177,7 @@
 
 @media screen and (min-width: 500px){
     .navbar__container{
-        
+        background-size: contain;
         font-size: 3vw;
         
     }
@@ -185,6 +185,11 @@
 @media screen and (min-width: 1000px){
     .navbar__container{
         font-size: 2vw;
+    }
+} 
+@media screen and (min-width: 1500px){
+    .navbar__container{
+        font-size: 1.5vw;
     }
 } 
 

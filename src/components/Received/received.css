@@ -31,4 +31,10 @@
   margin-bottom: 12px;
   width: 60px;
 }
+
+@media screen and (min-width: 1000px) {
+  .received__container .received__header {
+    width: 60%;
+  }
+}
 /*# sourceMappingURL=received.css.map */

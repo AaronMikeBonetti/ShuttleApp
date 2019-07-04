@@ -29,4 +29,10 @@
 .departures__container .departures__header li:nth-child(1) {
   width: 60px;
 }
+
+@media screen and (min-width: 1000px) {
+  .departures__container .departures__header {
+    width: 60%;
+  }
+}
 /*# sourceMappingURL=departures.css.map */

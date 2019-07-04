@@ -56,4 +56,10 @@
 .quarter__hour__class li {
   background: #dfdfdf;
 }
+
+@media screen and (min-width: 1000px) {
+  .crew__container {
+    width: 60%;
+  }
+}
 /*# sourceMappingURL=crew.css.map */

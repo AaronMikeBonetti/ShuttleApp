@@ -37,3 +37,8 @@
         background-image: url('../../imgs/Alaska.png');   
     }
 }
+@media screen and (min-width: 1000px){
+    .received-crew__container{
+        width: 60%    
+} 
+}

@@ -51,4 +51,10 @@
 .flight__container .AS {
   background-image: url("../../../imgs/Alaska.png");
 }
+
+@media screen and (min-width: 1000px) {
+  .flight__container {
+    width: 60%;
+  }
+}
 /*# sourceMappingURL=flight.css.map */
