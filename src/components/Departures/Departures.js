@@ -140,6 +140,7 @@ export default class Departures extends Component {
                     <li>Crew Amount</li>
                 </ul>
                 {crews}
+                <footer></footer>
             </div>
         )
     }

@@ -9,6 +9,7 @@ import Received from './components/Received/Received';
 import Valet from './components/Valet/Valet';
 
 
+
 const initialState = {}
 
 const middleware = []
@@ -35,6 +36,7 @@ function App(){
         <Route path="/departures" component={Departures}/>
         <Route path="/received" component={Received}/>
         <Route path="/valet" component={Valet}/>
+        
         
         
       </div>

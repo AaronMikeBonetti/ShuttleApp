@@ -274,6 +274,7 @@ this.configArrivalTime()
                     <li>Confirm<br/>Pick Up</li>
                 </ul>
                 {flights}
+                <footer></footer>
             </div>
         )
     }

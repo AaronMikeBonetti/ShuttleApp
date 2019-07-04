@@ -52,6 +52,7 @@ export default class Received extends Component {
                     <li>Received<br/>Time</li>
                 </ul>  
                 {crews}
+                <footer></footer>
             </div>
         )
     }
