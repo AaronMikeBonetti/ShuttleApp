@@ -20,10 +20,10 @@ connection.once('open', ()=>{
 })
 
 const receivedRouter = require('./Routes/received')
-const arrivalsRouter = require('./Routes/arrivals')
+// const arrivalsRouter = require('./Routes/arrivals')
 
 app.use('/received', receivedRouter)
-app.use('/arrivals', arrivalsRouter)
+// app.use('/arrivals', arrivalsRouter)
 
 app.listen(PORT, () =>{
     console.log("server is live on:", PORT)})
