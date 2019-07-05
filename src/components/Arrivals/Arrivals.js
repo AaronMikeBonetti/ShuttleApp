@@ -226,8 +226,7 @@ handleChange= (e) =>{
 
 
 componentWillMount(){
-this.getAirlineFlightSchedules('KMCO',this.configCurrentTimeInput(),'F9')
-
+// this.getAirlineFlightSchedules('KMCO',this.configCurrentTimeInput(),'F9')
 // this.getAirlineFlightSchedules('KMCO','2019/6/23/17','AA')
 // this.getAirlineFlightSchedules('KMCO','2019/6/23/17','UA')
 // this.getAirlineFlightSchedules('KMCO','2019/6/23/17','AS')
