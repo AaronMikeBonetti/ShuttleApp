@@ -157,7 +157,7 @@ export default class Arrivals extends Component {
             arrivalDate:e.arrivalDate.dateLocal
         }
         
-        Axios.post('http://localhost:5000/received/add', crew)
+        Axios.post('https://shuttleappbackend.herokuapp.com/received/add', crew)
             .then(res=>console.log(res.data))
 
         this.setState(prevState=>({

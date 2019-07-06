@@ -12,7 +12,7 @@ export default class Received extends Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/received/')
+        axios.get('https://shuttleappbackend.herokuapp.com/received')
             .then(response=>{
                 if(response.data.length > 0){
                     
