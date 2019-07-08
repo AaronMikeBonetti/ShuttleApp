@@ -10,7 +10,7 @@
   border-top-right-radius: 0%;
   font-weight: 800;
   font-size: 3.5vw;
-  background: url("../../imgs/nabar-background.jpg");
+  background: url("../../imgs/nabar-background.webp");
   background-position: center;
   background-size: cover;
 }
@@ -22,7 +22,7 @@
   grid-row: 1;
   height: 40px;
   margin: 5px;
-  background-image: url("../../imgs/Renaissance1.jpg");
+  background-image: url("../../imgs/Renaissance1.webp");
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;

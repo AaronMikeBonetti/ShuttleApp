@@ -30,19 +30,19 @@
 }
 
 .received-crew__container .F9 {
-  background-image: url("../../imgs/Frontier.png");
+  background-image: url("../../imgs/Frontier.webp");
 }
 
 .received-crew__container .UA {
-  background-image: url("../../imgs/United.png");
+  background-image: url("../../imgs/United.webp");
 }
 
 .received-crew__container .AA {
-  background-image: url("../../imgs/American.png");
+  background-image: url("../../imgs/American.webp");
 }
 
 .received-crew__container .AS {
-  background-image: url("../../imgs/Alaska.png");
+  background-image: url("../../imgs/Alaska.webp");
 }
 
 @media screen and (min-width: 1000px) {
