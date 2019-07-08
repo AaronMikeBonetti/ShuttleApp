@@ -1,0 +1,12 @@
+
+
+{
+    "name":"Shuttle App",
+    "short_name": "Shuttle",
+    "display":"standalone",
+    "icons":[
+        {"src":"../src/imgs/Renaissance1.webp",
+        "sizes":"48x48",
+        "type":"image/webp"}
+    ]
+}
