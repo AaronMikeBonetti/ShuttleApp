@@ -27,10 +27,14 @@ export default class Received extends Component {
                 return `${hours}:${minutes}`
             }
             this.configReceivedTimeDisplayed = (date) =>{
-                let hours = date.split('').splice(11,2).join('')
-                let minutes = date.split('').splice(13,3).join('')
+                let localDate = new Date(date)
+                let dateArray = localDate.toString()
+                console.log(dateArray)
+                let hours = dateArray.split('').splice(16,2).join('')
+                let minutes = dateArray.split('').splice(18,3).join('')
                 return `${hours}${minutes}`
             }
+        
             
     }
     render() {

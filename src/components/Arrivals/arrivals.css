@@ -25,14 +25,16 @@
 }
 
 .arrivals__container .arrivals__pop-up__container__active .arrivals__pop-up h2 {
-  padding: 20px;
+  padding: 30px 20px 10px 20px;
   color: black;
 }
 
 .arrivals__container .arrivals__pop-up__container__active .arrivals__pop-up button {
-  height: 40px;
-  width: 30%;
-  margin: 20px 10px;
+  height: 50px;
+  width: 45%;
+  margin: 4px;
+  margin-top: 20px;
+  border-radius: 5%;
   font-size: 15px;
   background: #5f5f5f;
   border: none;
