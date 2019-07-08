@@ -77,7 +77,7 @@ export default class Navbar extends Component{
             
     
                 <div  className="navbar__arrivals__container">
-                    <Link onClick={()=>{this.changeTab("Arrivals")}} to="/arrivals">
+                    <Link onClick={()=>{this.changeTab("Arrivals")}} to="/">
                 Arrivals</Link>
                 <div className={this.state.arrivalsCorner}></div>
                 

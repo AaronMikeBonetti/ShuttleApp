@@ -11,7 +11,6 @@ export default class Arrivals extends Component {
     constructor(){
         super()
         this.state = {
-            airlineSelectOption:'Choose Airline',
             flightNumberSearch:"",
             client_options:{
                 user:'aaronmikebonetti',
@@ -21,8 +20,9 @@ export default class Arrivals extends Component {
              savedFlights: [222,111,3340
             ],
             airlines:['F9','AA','UA','AS'],
+            isPopUpActive:false,
+            queuedCrew:{flightNumber:''},
             flightsData:[
-
                 {airportResources: {departureGate: "C1", arrivalTerminal: "A", arrivalGate: "16", baggage: "9"},
             arrivalAirportFsCode: "MCO",
             arrivalDate: {dateLocal: "2019-06-23T16:51:00.000", dateUtc: "2019-06-23T19:51:00.000Z"},
@@ -151,65 +151,80 @@ export default class Arrivals extends Component {
         })
     }
     this.confirmPickUp = (e) =>{
-        let crew = {
-            airline:e.carrierFsCode,
-            flightNumber:e.flightNumber,
-            arrivalDate:e.arrivalDate.dateLocal
-        }
+        this.setState({
+            isPopUpActive:true,
+            queuedCrew:{
+                airline:e.carrierFsCode,
+                flightNumber:e.flightNumber,
+                arrivalDate:e.arrivalDate.dateLocal
+            }
+        })
+    }
+    this.handleCancel= (e) =>{
+        this.setState({
+            isPopUpActive:false,
+        })
+    }
+    this.sendPickUpToReceived = () =>{
+        let crew = this.state.queuedCrew
         
         Axios.post('https://shuttleappbackend.herokuapp.com/received/add', crew)
             .then(res=>console.log(res.data))
 
         this.setState(prevState=>({
+            isPopUpActive:false,
+            queuedCrew:"",
             flightsData: prevState.flightsData.filter(flight=>{
-               return flight.flightNumber !== e.flightNumber &&  flight.carrierFsCode !== e.carrierFsCode
+               return flight.flightNumber !== crew.flightNumber &&  flight.carrierFsCode !== crew.carrierFsCode
         })
         }))
         
     } 
-    // this.fetchFlights = () =>{
+    this.fetchFlights = () =>{
 
-    //         Axios.get('http://localhost:5000/arrivals/')
-    //         .then(response=>{
-    //             if(response.data.length > 0){
-    //                 this.setState({
-    //                     flightsData: response.data
-    //                 })
-    //             }
-    //         })
-    // } 
+        Axios.get('https://shuttleappbackend.herokuapp.com/arrivals')
+            
+            .then(response=>{
+                
+                    
+                    this.setState({
+                       test: response.data
+                    })
+                
+            })
    
-
-}
+            
+        }
+    }
 
 
 getAirlineFlightSchedules = (airport,airline)=> {
     //airport example = KMCO
     //date example = 2019/6/23/17
     //airline example = f9 
-    fetch(`https://api.flightstats.com/flex/flightstatus/rest/v2/jsonp/airport/status/${airport}/arr/${this.configCurrentTimeInput()}?appId=91671c55&appKey=75376fdd738335ffa0f2b61ecac5dd03&utc=true&numHours=6&carrier=${airline}`)
-    .then((response) => response.text())
-    .then((responseText) => {
+    // fetch(`https://api.flightstats.com/flex/flightstatus/rest/v2/jsonp/airport/status/${airport}/arr/${this.configCurrentTimeInput()}?appId=91671c55&appKey=75376fdd738335ffa0f2b61ecac5dd03&utc=true&numHours=6&carrier=${airline}`)
+    // .then((response) => response.text())
+    // .then((responseText) => {
         
-        let removeCallbackFromResponse = responseText.split('').splice(9,);
-        removeCallbackFromResponse.pop()
-        let joinedData = removeCallbackFromResponse.join("")
+    //     let removeCallbackFromResponse = responseText.split('').splice(9,);
+    //     removeCallbackFromResponse.pop()
+    //     let joinedData = removeCallbackFromResponse.join("")
         
-        let finalData = JSON.parse(joinedData)
-        finalData.flightStatuses.map(flight=>{
+    //     let finalData = JSON.parse(joinedData)
+    //     finalData.flightStatuses.map(flight=>{
             
-            return this.setState(prevState=>({
-                flightsData:[ ...prevState.flightsData,flight]
-            })
-        ) 
-        })
+    //         return this.setState(prevState=>({
+    //             flightsData:[ ...prevState.flightsData,flight]
+    //         })
+    //     ) 
+    //     })
         
-        this.configArrivalTime()
-        this.sortFlightsByArrivalTime(this.state.flightsData)
-    })
-    .catch((error) => {
-        console.error(error);
-    });
+    //     this.configArrivalTime()
+    //     this.sortFlightsByArrivalTime(this.state.flightsData)
+    // })
+    // .catch((error) => {
+    //     console.error(error);
+    // });
     
 
 }
@@ -230,17 +245,17 @@ componentWillMount(){
 // this.getAirlineFlightSchedules('KMCO','2019/6/23/17','AA')
 // this.getAirlineFlightSchedules('KMCO','2019/6/23/17','UA')
 // this.getAirlineFlightSchedules('KMCO','2019/6/23/17','AS')
-
+this.fetchFlights()
 this.configArrivalTime()
 this.sortFlightsByArrivalTime(this.state.flightsData)
- 
+
     }
 
 
 
        
     render(){
-        // console.log(this.state)
+        console.log(this.state)
         const flights = this.state.flightsData.map(flight=>{
             if(this.includedFlights(flight.flightNumber) === false
             ){
@@ -263,20 +278,14 @@ this.sortFlightsByArrivalTime(this.state.flightsData)
         
         return (
             <div className="arrivals__container">
-                
-                {/* <form>
-                    <select name='airlineSelectOption' value={this.state.airlineSelectOption} onChange={this.handleChange}>
-                        <option value="" >Select Airline</option>
-                        <option value="AS" >Alaska</option>
-                        <option value="AA" >
-                            American
-                        </option>
-                        <option value="F9" >Frontier</option>
-                        <option value="UA" >United</option>
-                    </select>
-                    <input name="flightNumberSearch" onChange={this.handleChange} value={this.state.flightNumberSearch}className="flight__number__input"></input>
-                    <button onSubmit={this.handleSubmit}>Add</button>
-                </form> */}
+                <div onClick={this.handleCancel} className={this.state.isPopUpActive?"arrivals__pop-up__container__active":"arrivals__pop-up__container__disabled"}>
+                    <div className="arrivals__pop-up">
+                        <h1>Confirm Pick-Up</h1>
+                        <h2>{this.state.queuedCrew.flightNumber}</h2>
+                        <button onClick={this.sendPickUpToReceived}>Submit</button>
+                        <button onClick={this.handleCancel}>Cancel</button>
+                    </div>
+                </div>
                 <ul className="arrivals__header">
                     <li>Airline</li>
                     <li>Flight<br/>Number</li>
