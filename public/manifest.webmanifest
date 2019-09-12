@@ -4,9 +4,10 @@
     "name":"Shuttle App",
     "short_name": "Shuttle",
     "display":"standalone",
+    "start_url": ".",
     "icons":[
-        {"src":"../src/imgs/Renaissance1.webp",
-        "sizes":"48x48",
-        "type":"image/webp"}
+        {"src":"./Renaissance1.png",
+        "sizes":"144x144",
+        "type":"image/png"}
     ]
 }

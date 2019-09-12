@@ -7,7 +7,6 @@ import Departures from './components/Departures/Departures';
 import Received from './components/Received/Received';
 import Valet from './components/Valet/Valet';
 
-
 function App(){
   
     return (

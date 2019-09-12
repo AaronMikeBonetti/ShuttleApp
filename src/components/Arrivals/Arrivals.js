@@ -17,61 +17,162 @@ export default class Arrivals extends Component {
                 password:'b230674dc8c125241213c6b64d9e135859c94044'
             },
             
-             savedFlights: [222,111,3340
-            ],
+             
             airlines:['F9','AA','UA','AS'],
             isPopUpActive:false,
             queuedCrew:{flightNumber:''},
             flightsData:[
-                {airportResources: {departureGate: "C1", arrivalTerminal: "A", arrivalGate: "16", baggage: "9"},
-            arrivalAirportFsCode: "MCO",
-            arrivalDate: {dateLocal: "2019-06-23T16:51:00.000", dateUtc: "2019-06-23T19:51:00.000Z"},
-            carrierFsCode: "F9",
-            flightNumber:111,
-            delays: {departureGateDelayMinutes: 9},
-            departureAirportFsCode: "ALB",
-            departureDate: {dateLocal: "2019-06-23T12:35:00.000", dateUtc: "2019-06-23T16:35:00.000Z"},
-            flightDurations: {scheduledBlockMinutes: 196, blockMinutes: 172,
-            
-             scheduledAirMinutes: 174, airMinutes: 153, scheduledTaxiOutMinutes: 25,
-            flightEquipment: {scheduledEquipmentIataCode: "320", actualEquipmentIataCode: "32A", tailNumber: "N232FR"},
-            flightId: 1004378217,
-            flightNumber:222,
-            operationalTimes: [],
-            schedule: {flightType: "J", serviceClasses: "RJY", restrictions: "", uplines: Array(1)},
-            status: "L",}},
-            {airportResources: {departureGate: "C1", arrivalTerminal: "A", arrivalGate: "16",
-            flightNumber:111, baggage: "9"},
-            arrivalAirportFsCode: "MCO",
-            arrivalDate: {dateLocal: "2019-06-23T10:51:00.000", dateUtc: "2019-06-23T19:51:00.000Z"},
-            carrierFsCode: "AA",
-            delays: {departureGateDelayMinutes: 9},
-            flightNumber:222,
-            departureAirportFsCode: "ALB",
-            departureDate: {dateLocal: "2019-06-23T12:35:00.000", dateUtc: "2019-06-23T16:35:00.000Z"},
-            flightDurations: {scheduledBlockMinutes: 196, blockMinutes: 172, scheduledAirMinutes: 174, airMinutes: 153, scheduledTaxiOutMinutes: 25,
-                flightNumber: 160,
-            flightEquipment: {scheduledEquipmentIataCode: "320", actualEquipmentIataCode: "32A", tailNumber: "N232FR"},
-            flightId: 1004378217,
-           
-            schedule: {flightType: "J", serviceClasses: "RJY", restrictions: "", uplines: Array(1)},
-            status: "L",}},
-            {airportResources: {departureGate: "C1", arrivalTerminal: "A", arrivalGate: "16", baggage: "9"},
-            arrivalAirportFsCode: "MCO",
-            arrivalDate: {dateLocal: "2019-06-23T15:51:00.000", dateUtc: "2019-06-23T19:51:00.000Z"},
+                {
+            arrivalDate: {dateLocal: "2019-06-23T00:51:00.000"},
             carrierFsCode: "UA",
-            flightNumber: 3340,
-            delays: {departureGateDelayMinutes: 9},
-            departureAirportFsCode: "ALB",
-            departureDate: {dateLocal: "2019-06-23T12:35:00.000", dateUtc: "2019-06-23T16:35:00.000Z"},
-            flightDurations: {scheduledBlockMinutes: 196, blockMinutes: 172, scheduledAirMinutes: 174, airMinutes: 153, scheduledTaxiOutMinutes: 25,
-            flightEquipment: {scheduledEquipmentIataCode: "320", actualEquipmentIataCode: "32A", tailNumber: "N232FR"},
-            flightId: 1004378217,
-            flightNumber: "630",
-            operationalTimes: [],
-            schedule: {flightType: "J", serviceClasses: "RJY", restrictions: "", uplines: Array(1)},
-            status: "L",}
-            }
+            flightNumber:1214,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T01:21:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:880,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T06:21:00.000"},
+            carrierFsCode: "UA",
+            flightNumber:403,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T06:17:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:201,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T07:06:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:310,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T10:50:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:141,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T12:24:00.000"},
+            carrierFsCode: "AS",
+            flightNumber:20,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T13:40:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:4441,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T14:31:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:7841,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T14:34:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:431,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T17:16:00.000"},
+            carrierFsCode: "AS",
+            flightNumber:3641,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T16:21:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:906,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T16:51:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:208,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T20:35:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:2236,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T23:40:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:546,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T00:03:00.000"},
+            carrierFsCode: "AS",
+            flightNumber:10,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T01:41:00.000"},
+            carrierFsCode: "",
+            flightNumber:2031,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T04:21:00.000"},
+            carrierFsCode: "AS",
+            flightNumber:20,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T06:00:00.000"},
+            carrierFsCode: "AA",
+            flightNumber:1231,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T07:06:00.000"},
+            carrierFsCode: "AA",
+            flightNumber:2031,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T05:55:00.000"},
+            carrierFsCode: "F9",
+            flightNumber:141,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T07:07:00.000"},
+            carrierFsCode: "AA",
+            flightNumber:1121,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T07:20:00.000"},
+            carrierFsCode: "AA",
+            flightNumber:4441,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T08:38:00.000"},
+            carrierFsCode: "AA",
+            flightNumber:7841,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T14:34:00.000"},
+            carrierFsCode: "AA",
+            flightNumber:3441,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T07:16:00.000"},
+            carrierFsCode: "AA",
+            flightNumber:3641,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T12:26:00.000"},
+            carrierFsCode: "UA",
+            flightNumber:906,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T14:35:00.000"},
+            carrierFsCode: "UA",
+            flightNumber:346,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T22:25:00.000"},
+            carrierFsCode: "UA",
+            flightNumber:2236,
+            },
+                {
+            arrivalDate: {dateLocal: "2019-06-23T22:40:00.000"},
+            carrierFsCode: "UA",
+            flightNumber:856,
+            },
+            
         ]
     }
     this.configDateDisplayed = (date) =>{
@@ -90,7 +191,7 @@ export default class Arrivals extends Component {
         let currentYear = currentDate.getFullYear()
         let currentMonth = currentDate.getMonth() + 1
         let currentDay = currentDate.getDate()
-        let finalDate = `${currentYear}/${currentMonth}/${currentDay}/17`
+        let finalDate = `${currentMonth}/${currentDay}/${currentYear}`
         return finalDate
     }
     
@@ -123,23 +224,23 @@ export default class Arrivals extends Component {
         return valueForTrue && valueForFalse
         
     }
-    this.includedFlights = (flight) =>{
-        let valueForTrue = false
-        let valueForFalse = true
-         this.state.savedFlights.forEach(savedFlight=>{
+    // this.includedFlights = (flight) =>{
+    //     let valueForTrue = false
+    //     let valueForFalse = true
+    //      this.state.savedFlights.forEach(savedFlight=>{
             
-            if(flight===savedFlight){
+    //         if(flight===savedFlight){
             
-            valueForTrue = true
-            }
-            else{ 
-                return valueForFalse = true
-            }
+    //         valueForTrue = true
+    //         }
+    //         else{ 
+    //             return valueForFalse = true
+    //         }
             
-        })
-        return valueForTrue && valueForFalse
+    //     })
+    //     return valueForTrue && valueForFalse
         
-    }
+    // }
     
     this.sortFlightsByArrivalTime = (flights) =>{
 
@@ -180,21 +281,7 @@ export default class Arrivals extends Component {
         }))
         
     } 
-    this.fetchFlights = () =>{
-
-        Axios.get('https://shuttleappbackend.herokuapp.com/arrivals')
-            
-            .then(response=>{
-                
-                    
-                    this.setState({
-                       test: response.data
-                    })
-                
-            })
-   
-            
-        }
+    
     }
 
 
@@ -202,7 +289,7 @@ getAirlineFlightSchedules = (airport,airline)=> {
     //airport example = KMCO
     //date example = 2019/6/23/17
     //airline example = f9 
-    // fetch(`https://api.flightstats.com/flex/flightstatus/rest/v2/jsonp/airport/status/${airport}/arr/${this.configCurrentTimeInput()}?appId=91671c55&appKey=75376fdd738335ffa0f2b61ecac5dd03&utc=true&numHours=6&carrier=${airline}`)
+    // fetch(`https://api.flightstats.com/flex/flightstatus/rest/v2/jsonp/airport/status/KMCO/arr/2019/6/23/17?appId=91671c55&appKey=75376fdd738335ffa0f2b61ecac5dd03&utc=true&numHours=6&carrier=f9`)
     // .then((response) => response.text())
     // .then((responseText) => {
         
@@ -245,7 +332,7 @@ componentWillMount(){
 // this.getAirlineFlightSchedules('KMCO','2019/6/23/17','AA')
 // this.getAirlineFlightSchedules('KMCO','2019/6/23/17','UA')
 // this.getAirlineFlightSchedules('KMCO','2019/6/23/17','AS')
-this.fetchFlights()
+// this.fetchFlights()
 this.configArrivalTime()
 this.sortFlightsByArrivalTime(this.state.flightsData)
 
@@ -257,12 +344,12 @@ this.sortFlightsByArrivalTime(this.state.flightsData)
     render(){
         console.log(this.state)
         const flights = this.state.flightsData.map(flight=>{
-            if(this.includedFlights(flight.flightNumber) === false
-            ){
-                return null
-            }
+            // if(this.includedFlights(flight.flightNumber) === false
+            // ){
+            //     return null
+            // }
 
-            else if(this.includedAirlines(flight.carrierFsCode)===false){
+            if(this.includedAirlines(flight.carrierFsCode)===false){
                 return null
             }
             else{
@@ -270,7 +357,7 @@ this.sortFlightsByArrivalTime(this.state.flightsData)
             key={Math.random()} 
             img={flight.carrierFsCode} value={flight}
             num={flight.flightNumber}
-            etaDate={this.configDateDisplayed(flight.arrivalDate.dateLocal)}
+            etaDate={this.configCurrentTimeInput()}
             etaTime={this.configTimeDisplayed(flight.arrivalDate.dateLocal)}
             onClick={this.confirmPickUp}/>
             }

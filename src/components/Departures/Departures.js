@@ -34,7 +34,7 @@ export default class Departures extends Component {
                 isQuarterHour:false
             },
                 {
-                airline:"AA",
+                airline:"F9",
                 crewDepartureTime:"5:30",
                 crewAmount:"2",
                 isQuarterHour:false
@@ -51,8 +51,15 @@ export default class Departures extends Component {
                 crewAmount:"2",
                 isQuarterHour:false
             },
+            
                 {
                 airline:"F9",
+                crewDepartureTime:"6:30",
+                crewAmount:"2",
+                isQuarterHour:false
+            },
+                {
+                airline:"AA",
                 crewDepartureTime:"7:30",
                 crewAmount:"2",
                 isQuarterHour:false
@@ -82,6 +89,12 @@ export default class Departures extends Component {
                 isQuarterHour:true
             },
                 {
+                airline:"AA",
+                crewDepartureTime:"9:15",
+                crewAmount:"2",
+                isQuarterHour:true
+            },
+                {
                 airline:"F9",
                 crewDepartureTime:"10:00",
                 crewAmount:"2",
@@ -100,6 +113,12 @@ export default class Departures extends Component {
             },
                 {
                 airline:"F9",
+                crewDepartureTime:"11:30",
+                crewAmount:"2",
+                isQuarterHour:false
+            },
+                {
+                airline:"UA",
                 crewDepartureTime:"12:30",
                 crewAmount:"2",
                 isQuarterHour:false

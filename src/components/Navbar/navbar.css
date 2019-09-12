@@ -21,6 +21,7 @@
   -ms-grid-row: 1;
   grid-row: 1;
   height: 40px;
+  width: auto;
   margin: 5px;
   background-image: url("../../imgs/Renaissance1.webp");
   background-size: contain;

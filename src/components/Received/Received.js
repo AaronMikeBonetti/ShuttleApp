@@ -3,6 +3,7 @@ import "./received.css"
 import axios from "axios"
 import ReceivedCrew from "../Received/ReceivedCrew"
 
+
 export default class Received extends Component {
     constructor(){
         super()
@@ -29,7 +30,6 @@ export default class Received extends Component {
             this.configReceivedTimeDisplayed = (date) =>{
                 let localDate = new Date(date)
                 let dateArray = localDate.toString()
-                console.log(dateArray)
                 let hours = dateArray.split('').splice(16,2).join('')
                 let minutes = dateArray.split('').splice(18,3).join('')
                 return `${hours}${minutes}`
