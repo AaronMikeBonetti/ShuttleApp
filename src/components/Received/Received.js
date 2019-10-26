@@ -10,6 +10,13 @@ export default class Received extends Component {
         this.state={
             receivedList:[]
         }
+        // this.deleteCrews = () =>{
+        //     axios.get('https://shuttleappbackend.herokuapp.com/received/delete')
+        // .then(response=>{
+        //     console.log('done')
+        //     }
+        // )
+        // }
     }
 
     componentDidMount(){
@@ -22,6 +29,9 @@ export default class Received extends Component {
                     })
                 }
             })
+        
+        
+
             this.configArrivalTimeDisplayed = (date) =>{
                 let hours = date.split('').splice(8,2).join('')
                 let minutes = date.split('').splice(10,2).join('')
@@ -34,10 +44,12 @@ export default class Received extends Component {
                 let minutes = dateArray.split('').splice(18,3).join('')
                 return `${hours}${minutes}`
             }
+            
         
             
     }
     render() {
+        
         let crews = this.state.receivedList.map(crew=>{
             return <ReceivedCrew
             key={Math.random()} airline={crew.airline} flightNumber={crew.flightNumber}
@@ -56,6 +68,7 @@ export default class Received extends Component {
                     <li>Received<br/>Time</li>
                 </ul>  
                 {crews}
+                {/* <button onClick={this.deleteCrews()}>Delete Crews</button> */}
                 <footer></footer>
             </div>
         )
