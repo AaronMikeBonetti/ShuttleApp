@@ -20,15 +20,15 @@ export default class Received extends Component {
     }
 
     componentDidMount(){
-        axios.get('https://shuttleappbackend.herokuapp.com/received')
-            .then(response=>{
-                if(response.data.length > 0){
+        // axios.get('https://shuttleappbackend.herokuapp.com/received')
+        //     .then(response=>{
+        //         if(response.data.length > 0){
                     
-                    this.setState({
-                        receivedList: response.data
-                    })
-                }
-            })
+        //             this.setState({
+        //                 receivedList: response.data
+        //             })
+        //         }
+        //     })
         
         
 
@@ -50,13 +50,13 @@ export default class Received extends Component {
     }
     render() {
         
-        let crews = this.state.receivedList.map(crew=>{
-            return <ReceivedCrew
-            key={Math.random()} airline={crew.airline} flightNumber={crew.flightNumber}
-            arrivalTime={this.configArrivalTimeDisplayed(crew.arrivalDate)}
-            receivedDate={this.configReceivedTimeDisplayed(crew.createdAt)}
-            />
-        })
+        // let crews = this.state.receivedList.map(crew=>{
+        //     return <ReceivedCrew
+        //     key={Math.random()} airline={crew.airline} flightNumber={crew.flightNumber}
+        //     arrivalTime={this.configArrivalTimeDisplayed(crew.arrivalDate)}
+        //     receivedDate={this.configReceivedTimeDisplayed(crew.createdAt)}
+        //     />
+        // })
         
         return (
             <div className="received__container">
@@ -67,7 +67,7 @@ export default class Received extends Component {
                     <li>Arrival<br/>Time</li>
                     <li>Received<br/>Time</li>
                 </ul>  
-                {crews}
+                {/* {crews} */}
                 {/* <button onClick={this.deleteCrews()}>Delete Crews</button> */}
                 <footer></footer>
             </div>

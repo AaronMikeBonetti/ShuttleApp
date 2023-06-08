@@ -269,8 +269,8 @@ export default class Arrivals extends Component {
     this.sendPickUpToReceived = () =>{
         let crew = this.state.queuedCrew
         
-        Axios.post('https://shuttleappbackend.herokuapp.com/received/add', crew)
-            .then(res=>console.log(res.data))
+        // Axios.post('https://shuttleappbackend.herokuapp.com/received/add', crew)
+        //     .then(res=>console.log(res.data))
 
         this.setState(prevState=>({
             isPopUpActive:false,
